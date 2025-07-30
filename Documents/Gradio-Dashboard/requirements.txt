@@ -1,0 +1,7 @@
+gradio
+torch
+ultralytics
+sahi
+deep_sort_realtime
+opencv-python
+pillow
