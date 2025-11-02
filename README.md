@@ -1,7 +1,7 @@
 This repository contains the findings for the "Adobe Behavior Simulation Challenge." This project tackles two critical challenges in social media analytics:
 
-## Task 1: Behavior Simulation: Predicting a tweet's engagement (like count) by solving the "engagement heterogeneity problem" (the vast difference between viral and non-viral content).
-##Task 2: Content Simulation: Generating authentic, brand-specific tweet text based on a given set of metadata, including a media URL.
+Task 1: Behavior Simulation: Predicting a tweet's engagement (like count) by solving the "engagement heterogeneity problem" (the vast difference between viral and non-viral content).
+Task 2: Content Simulation: Generating authentic, brand-specific tweet text based on a given set of metadata, including a media URL.
 
 # Task 1: Behavior Simulation (Engagement Prediction):
 
@@ -70,5 +70,6 @@ ROUGE-2 (F1-Score Avg): 0.8655
 BLEU-4 (Cumulative): 0.8341
 
 These scores demonstrate that the model successfully learned to align generated content with the brand identity, timestamp, and, most importantly, the visual content of the accompanying image.
+
 
 
