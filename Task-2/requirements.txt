@@ -1,1 +1,7 @@
+pandas
+transformers
+Pillow
+requests
+groq
+torch
 
