@@ -13,6 +13,9 @@ A single model cannot effectively learn patterns across the entire engagement sp
 ## Architecture: Two-Stage Hybrid Model
 We developed a novel, two-stage hybrid architecture built on LightGBM that significantly outperforms standard regression.
 
+<img width="889" height="713" alt="image 1" src="https://github.com/user-attachments/assets/6b57c3f4-1269-4a9e-942a-2679d255575b" />
+
+
 ## Stage 1: Engagement Bin Classifier
 A LightGBM Multiclass Classifier categorizes each tweet into one of five engagement bins (Very Low, Low, Medium, High, Very High) based on quantile-based splits.
 
@@ -48,6 +51,8 @@ A generative model cannot interpret a media_url string. It doesn't understand th
 ## Architecture: Context-Enrichment Pipeline
 We developed a multi-stage pipeline to enrich the input data before fine-tuning a generative model.
 
+<img width="756" height="514" alt="image 5 (1)" src="https://github.com/user-attachments/assets/a8d5f33b-2a2d-4347-8680-01a0d0154f2d" />
+
 ## Phase 1: Contextual Enrichment (Image Captioning)
 A visual-language model (Salesforce/blip-image-captioning-base) is used to "see" the image at each media_url.
 It generates a descriptive text caption (e.g., "a red sports car on a winding road"), effectively translating the visual context into a textual feature.
@@ -70,6 +75,7 @@ ROUGE-2 (F1-Score Avg): 0.8655
 BLEU-4 (Cumulative): 0.8341
 
 These scores demonstrate that the model successfully learned to align generated content with the brand identity, timestamp, and, most importantly, the visual content of the accompanying image.
+
 
 
 
