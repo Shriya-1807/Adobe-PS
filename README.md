@@ -19,7 +19,7 @@ A LightGBM Multiclass Classifier categorizes each tweet into one of five engagem
 ## Stage 2: Bin-Augmented Regressor
 A LightGBM Regressor predicts the precise log-like count.
 
-## Key Innovation: The regressor is fed both the original features and the 5-dimensional probability distribution from the Stage 1 classifier. This "soft-gating" mechanism allows the regressor to understand the uncertainty of the initial bin prediction and learn bin-specific relationships.
+### Key Innovation: The regressor is fed both the original features and the 5-dimensional probability distribution from the Stage 1 classifier. This "soft-gating" mechanism allows the regressor to understand the uncertainty of the initial bin prediction and learn bin-specific relationships.
 
 ## Features:
 The model uses a multi-modal feature set:
@@ -70,6 +70,7 @@ ROUGE-2 (F1-Score Avg): 0.8655
 BLEU-4 (Cumulative): 0.8341
 
 These scores demonstrate that the model successfully learned to align generated content with the brand identity, timestamp, and, most importantly, the visual content of the accompanying image.
+
 
 
 
