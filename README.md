@@ -10,7 +10,7 @@ This task predicts the log-transformed number of likes a tweet will receive. Tra
 ## The Challenge: Engagement Heterogeneity
 A single model cannot effectively learn patterns across the entire engagement spectrum, from 10 likes to 100,000 likes. Our solution addresses this by first classifying the "regime" of engagement and then performing a specialized regression.
 
-## Architecture: Two-Stage Hybrid Model
+## Architecture: Two-Stage Hybrid Model.
 We developed a novel, two-stage hybrid architecture built on LightGBM that significantly outperforms standard regression.
 
 <img width="889" height="713" alt="image 1" src="https://github.com/user-attachments/assets/6b57c3f4-1269-4a9e-942a-2679d255575b" />
@@ -75,6 +75,7 @@ ROUGE-2 (F1-Score Avg): 0.8655
 BLEU-4 (Cumulative): 0.8341
 
 These scores demonstrate that the model successfully learned to align generated content with the brand identity, timestamp, and, most importantly, the visual content of the accompanying image.
+
 
 
 
